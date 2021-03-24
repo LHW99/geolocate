@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+<head>
+  {% block title %}<title>LOCATE</title>{% endblock %} 
+  <meta charset="utf-8">
+  <!-- easy viewport optimization -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <!-- loading custom css file -->
+  <!--{% load static %}-->
+  <!--<link rel="stylesheet" href="{% static 'css/styles.css' %}">-->
+</head>
+<body class='bg-light'>
+  <nav class='navbar navbar-light bg-light'>
+    <div class='container-fluid'>
+    </div>
+  </nav>
+
+  <div class='container container-table rounded'>
+    {% block content %}{% endblock %}
+  </div>
+</body>
+</html>

@@ -1,3 +1,8 @@
 from django.shortcuts import render
+try:
+  from stock_portfolio.settings.private_settings import API_KEY
+except:
+  print('ok')
 
-# Create your views here.
+def home(request):
+  return render(request, 'home.html')
